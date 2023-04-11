@@ -13,9 +13,9 @@ export default function Login() {
     if (user.trim() in credentials) {
       if (credentials[user.trim()] == password) {
         setUsername(user.trim());
+        window.localStorage.setItem('CFS_Content_Username', JSON.stringify(user.trim()))
       } else alert("Wrong password.");
     } else alert("Wrong username.");
-    window.localStorage.setItem('CFS_Content_Username', JSON.stringify(user.trim()))
   };
 
   return (
