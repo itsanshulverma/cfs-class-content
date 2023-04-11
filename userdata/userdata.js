@@ -1,10 +1,10 @@
 export const credentials = {
-  thisisamish: "thisisamish123",
+  teacher1: "teacher123",
   itsanshulverma: "password",
 };
 
 export const teacherSubjectMap = {
-  thisisamish: { 
+  teacher1: { 
     1: "English", 
     2: "Hindi", 
     10: "Maths" 
