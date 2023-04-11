@@ -15,7 +15,7 @@ export const teacherSubjectMap = {
   },
 };
 
-export const classwiseClassroomLinks = {
+export const classwiseLinks = {
   1: { 
     English: "eng link goes here", 
     Hindi: "hindi link goes here" 

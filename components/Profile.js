@@ -2,7 +2,7 @@ import { UserContext } from "@/lib/context";
 import { useContext } from "react";
 import {
   teacherSubjectMap,
-  classwiseClassroomLinks,
+  classwiseLinks,
 } from "@/userdata/userdata.js";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ export default function Profile() {
     links.push([
       key,
       teacherData[key],
-      classwiseClassroomLinks[key][teacherData[key]],
+      classwiseLinks[key][teacherData[key]],
     ]);
   }
 
