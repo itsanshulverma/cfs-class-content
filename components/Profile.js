@@ -7,7 +7,7 @@ import {
 import Link from "next/link";
 
 export default function Profile() {
-  const { username } = useContext(UserContext);
+  const { username, setUsername } = useContext(UserContext);
   const teacherData = teacherSubjectMap[username];
   const links = [];
   for (const key in teacherData) {
@@ -20,7 +20,7 @@ export default function Profile() {
 
   const handleLogOut = () => {
     window.localStorage.setItem('CFS_Content_Username', JSON.stringify(""));
-    window.location.reload(false);
+    setUsername("");
   };
 
   return (
